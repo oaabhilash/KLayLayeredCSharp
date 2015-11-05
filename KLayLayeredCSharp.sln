@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KLayLayeredCSharp", "KLayLayeredCSharp\KLayLayeredCSharp.csproj", "{DBD8A765-EEE1-491A-A9AF-06D464E559A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KLay.Core", "KLay.Core\KLay.Core.csproj", "{A26814DC-2638-4322-A61A-3D02F6131584}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KLay.Core.KGraph", "KLay.Core.KGraph\KLay.Core.KGraph.csproj", "{FB51460E-C373-409C-ACA5-7B3F1228F365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KLay.Kiml", "KLay.Kiml\KLay.Kiml.csproj", "{23C4A04C-F74B-4943-B9EF-64AFD2F3F3C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBD8A765-EEE1-491A-A9AF-06D464E559A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD8A765-EEE1-491A-A9AF-06D464E559A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD8A765-EEE1-491A-A9AF-06D464E559A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD8A765-EEE1-491A-A9AF-06D464E559A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A26814DC-2638-4322-A61A-3D02F6131584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A26814DC-2638-4322-A61A-3D02F6131584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A26814DC-2638-4322-A61A-3D02F6131584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A26814DC-2638-4322-A61A-3D02F6131584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB51460E-C373-409C-ACA5-7B3F1228F365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB51460E-C373-409C-ACA5-7B3F1228F365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB51460E-C373-409C-ACA5-7B3F1228F365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB51460E-C373-409C-ACA5-7B3F1228F365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23C4A04C-F74B-4943-B9EF-64AFD2F3F3C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C4A04C-F74B-4943-B9EF-64AFD2F3F3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C4A04C-F74B-4943-B9EF-64AFD2F3F3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C4A04C-F74B-4943-B9EF-64AFD2F3F3C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
