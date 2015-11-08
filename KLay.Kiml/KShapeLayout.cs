@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KLay.Kiml.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 /// </summary>
 namespace KLay.Kiml
 {
-    public class KShapeLayout
+    public class KShapeLayout : IKShapeLayout
     {
         float _xpos = 0.0f; //KLAY: XPOS_EDEFAULT
         float _ypos = 0.0f; //KLAY: YPOS_EDEFAULT
@@ -74,6 +75,8 @@ namespace KLay.Kiml
         {
             _modified = false;
         }
+
+
 
     }
 }

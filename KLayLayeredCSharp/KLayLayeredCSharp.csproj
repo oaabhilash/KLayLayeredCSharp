@@ -49,6 +49,24 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KLay.Core.KGraph\KLay.Core.KGraph.csproj">
+      <Project>{fb51460e-c373-409c-aca5-7b3f1228f365}</Project>
+      <Name>KLay.Core.KGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KLay.Core\KLay.Core.csproj">
+      <Project>{a26814dc-2638-4322-a61a-3d02f6131584}</Project>
+      <Name>KLay.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KLay.Kiml\KLay.Kiml.csproj">
+      <Project>{23c4a04c-f74b-4943-b9ef-64afd2f3f3c0}</Project>
+      <Name>KLay.Kiml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KLay.Util\KLay.Util.csproj">
+      <Project>{8fa4b6d7-6ac5-4350-b7e1-e6c4f1beffb2}</Project>
+      <Name>KLay.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

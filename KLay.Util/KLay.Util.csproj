@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FB51460E-C373-409C-ACA5-7B3F1228F365}</ProjectGuid>
+    <ProjectGuid>{8FA4B6D7-6AC5-4350-B7E1-E6C4F1BEFFB2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KLay.Core.KGraph</RootNamespace>
-    <AssemblyName>KLay.Core.KGraph</AssemblyName>
+    <RootNamespace>KLay.Util</RootNamespace>
+    <AssemblyName>KLay.Util</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,12 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IKNode.cs" />
-    <Compile Include="Entities\KLabel.cs" />
-    <Compile Include="KNode.cs" />
+    <Compile Include="Interfaces\IKimlUtil.cs" />
+    <Compile Include="KimlUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\KLay.Core.KGraph\KLay.Core.KGraph.csproj">
+      <Project>{fb51460e-c373-409c-aca5-7b3f1228f365}</Project>
+      <Name>KLay.Core.KGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KLay.Core\KLay.Core.csproj">
+      <Project>{a26814dc-2638-4322-a61a-3d02f6131584}</Project>
+      <Name>KLay.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\KLay.Kiml\KLay.Kiml.csproj">
       <Project>{23c4a04c-f74b-4943-b9ef-64afd2f3f3c0}</Project>
       <Name>KLay.Kiml</Name>
