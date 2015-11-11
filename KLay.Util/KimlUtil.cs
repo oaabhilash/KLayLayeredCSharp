@@ -1,4 +1,5 @@
 ﻿using KLay.Core.KGraph;
+using KLay.Core.KGraph.Entities;
 using KLay.Core.KGraph.Interfaces;
 using KLay.Kiml;
 using KLay.Kiml.Interfaces;
@@ -20,7 +21,28 @@ namespace KLay.Util
             shapeLayout.Insets = new KInsets();
             layoutNode.KShapeLayout = shapeLayout;
             return layoutNode;
-        
         }
+
+        public KLabel CreateInitializedKLabel(IKNode parent)
+        {
+            KLabel label = new KLabel();
+            IKShapeLayout shapeLayout = new KShapeLayout();
+            label.KShapeLayout = shapeLayout;
+            label.Text = "";
+            label.Parent = parent;
+            return label;
+            
+        }
+
+        public KPort CreateInitializedPort()
+        {
+            KPort port = new KPort();
+            IKShapeLayout shapeLayout = new KShapeLayout();
+            shapeLayout.Insets = new KInsets();
+            port.KShapeLayout = shapeLayout;
+            return port;
+        }
+
+
     }
 }

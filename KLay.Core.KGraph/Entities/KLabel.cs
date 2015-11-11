@@ -25,7 +25,7 @@ namespace KLay.Core.KGraph.Entities
             {
                 if(_parent != null)
                 {
-                    //TODO :: will need to add unit test to confirm this works
+                    
                     _parent.LabelList.Remove(this);
                 }
                 _parent = value;

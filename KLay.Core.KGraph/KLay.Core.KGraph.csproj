@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\KEdge.cs" />
+    <Compile Include="Entities\KPort.cs" />
     <Compile Include="Interfaces\IKNode.cs" />
     <Compile Include="Entities\KLabel.cs" />
     <Compile Include="KNode.cs" />
