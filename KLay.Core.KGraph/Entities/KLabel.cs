@@ -11,7 +11,7 @@ namespace KLay.Core.KGraph.Entities
     public class KLabel
     {
         string _text = null;
-        public IKNode _parent = null;
+        IKNode _parent = null;
         public IKShapeLayout KShapeLayout { get; set; }
 
         public string Text {
@@ -29,7 +29,11 @@ namespace KLay.Core.KGraph.Entities
                     _parent.LabelList.Remove(this);
                 }
                 _parent = value;
-                _parent.LabelList.Add(this);
+
+                if (_parent != null)
+                {
+                    _parent.LabelList.Add(this);
+                }
             }
         }
     }

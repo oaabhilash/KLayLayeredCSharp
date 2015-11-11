@@ -24,15 +24,19 @@ namespace KLay.Core.KGraph
                 {
                     _parent.Children.Remove(this);
                 }
-
-
+                
                 IKNode newParent = value;
-                if(newParent.Parent == this)
+                if(newParent != null && newParent.Parent == this)
                 {
                     throw new ArgumentException("Recursive Containment is not allowed KNode");
                 }
+
+
                 _parent = newParent;
-                _parent.Children.Add(this);
+                if (_parent != null)
+                {
+                    _parent.Children.Add(this);
+                }
                 
             }
             get

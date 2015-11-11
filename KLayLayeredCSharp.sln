@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40Util", "40Util", "{C8CCE0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KLay.Util", "KLay.Util\KLay.Util.csproj", "{8FA4B6D7-6AC5-4350-B7E1-E6C4F1BEFFB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klay.Tests", "Klay.Tests\Klay.Tests.csproj", "{2CAFDA04-ED78-4D6E-AF96-98B5EC917303}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{8FA4B6D7-6AC5-4350-B7E1-E6C4F1BEFFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FA4B6D7-6AC5-4350-B7E1-E6C4F1BEFFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FA4B6D7-6AC5-4350-B7E1-E6C4F1BEFFB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CAFDA04-ED78-4D6E-AF96-98B5EC917303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CAFDA04-ED78-4D6E-AF96-98B5EC917303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CAFDA04-ED78-4D6E-AF96-98B5EC917303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CAFDA04-ED78-4D6E-AF96-98B5EC917303}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
