@@ -10,8 +10,11 @@ namespace KLay.Core.KGraph.Interfaces
 {
     public interface IKNode
     {
-       IKShapeLayout KShapeLayout { get; set; }
-       IKNode Parent { get; set; }
-       List<KLabel> LabelList { get; }
+        IKShapeLayout KShapeLayout { get; set; }
+        IKNode Parent { get; set; }
+        List<KLabel> LabelList { get; }
+
+        List<IKNode> Children { get; }
     }
+
 }

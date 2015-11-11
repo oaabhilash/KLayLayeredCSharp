@@ -13,19 +13,27 @@ namespace KLay.Core.KGraph
     {
         IKNode _parent;
         List<KLabel> _labelList = new List<KLabel>();
+        List<IKNode> _children = new List<IKNode>();
 
         public IKShapeLayout KShapeLayout { get; set; }
 
         public IKNode Parent {
             set
             {
+                if(_parent != null)
+                {
+                    _parent.Children.Remove(this);
+                }
+
+
                 IKNode newParent = value;
                 if(newParent.Parent == this)
                 {
                     throw new ArgumentException("Recursive Containment is not allowed KNode");
                 }
                 _parent = newParent;
-
+                _parent.Children.Add(this);
+                
             }
             get
             {
@@ -33,7 +41,9 @@ namespace KLay.Core.KGraph
             }
         }
 
-        public List<KLabel> LabelList { get { return _labelList; }
-                 
+        public List<KLabel> LabelList { get { return _labelList; } }
+
+        public List<IKNode> Children { get { return _children; } }
+
     }
 }

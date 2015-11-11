@@ -14,6 +14,9 @@ namespace KLayLayeredCSharp
     {
         static void Main(string[] args)
         {
+            IKNode rootNode = createGraph();
+
+            Console.WriteLine("done");
         }
 
         public static IKNode createGraph()
@@ -25,7 +28,7 @@ namespace KLayLayeredCSharp
             IKNode childNode = kimUtil.CreateInitializedKNode();
             childNode.Parent = parentNode;
 
-
+            
             return parentNode;
 
         }

@@ -1,4 +1,5 @@
 ﻿using KLay.Core.KGraph.Interfaces;
+using KLay.Kiml.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace KLay.Core.KGraph.Entities
     {
         string _text = null;
         public IKNode _parent = null;
+        public IKShapeLayout KShapeLayout { get; set; }
 
         public string Text {
               get { return _text; }
@@ -25,9 +27,9 @@ namespace KLay.Core.KGraph.Entities
                 {
                     //TODO :: will need to add unit test to confirm this works
                     _parent.LabelList.Remove(this);
-                    _parent = value;
-                    _parent.LabelList.Add(this);
                 }
+                _parent = value;
+                _parent.LabelList.Add(this);
             }
         }
     }
