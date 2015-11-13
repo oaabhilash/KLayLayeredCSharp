@@ -14,6 +14,8 @@ namespace KLay.Core.KGraph
         IKNode _parent;
         List<KLabel> _labelList = new List<KLabel>();
         List<IKNode> _children = new List<IKNode>();
+        List<KPort> _portList = new List<KPort>(); 
+
 
         public IKShapeLayout KShapeLayout { get; set; }
 
@@ -49,5 +51,6 @@ namespace KLay.Core.KGraph
 
         public List<IKNode> Children { get { return _children; } }
 
+        public List<KPort> PortList { get { return _portList; } }
     }
 }

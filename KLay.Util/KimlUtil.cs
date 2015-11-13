@@ -2,6 +2,7 @@
 using KLay.Core.KGraph.Entities;
 using KLay.Core.KGraph.Interfaces;
 using KLay.Kiml;
+using KLay.Kiml.Entities;
 using KLay.Kiml.Interfaces;
 using KLay.Util.Interfaces;
 using System;
@@ -43,6 +44,16 @@ namespace KLay.Util
             return port;
         }
 
+
+        public KEdge CreateInitializedEdge()
+        {
+            KEdge edge = new KEdge();
+            IKEdgeLayout edgeLayout = new KEdgeLayout();
+            edgeLayout.SourcePoint = new KPoint();
+            edgeLayout.TargetPoint = new KPoint();
+            edge.EdgeLayout = edgeLayout;
+            return edge;
+        }
 
     }
 }

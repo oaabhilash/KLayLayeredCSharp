@@ -15,6 +15,8 @@ namespace KLay.Core.KGraph.Interfaces
         List<KLabel> LabelList { get; }
 
         List<IKNode> Children { get; }
+
+        List<KPort> PortList { get ;  }
     }
 
 }

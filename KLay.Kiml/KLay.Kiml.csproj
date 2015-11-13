@@ -41,7 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\KInsets.cs" />
+    <Compile Include="Entities\KPoint.cs" />
+    <Compile Include="Interfaces\IKEdgeLayout.cs" />
     <Compile Include="Interfaces\IKShapeLayout.cs" />
+    <Compile Include="KEdgeLayout.cs" />
     <Compile Include="KShapeLayout.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

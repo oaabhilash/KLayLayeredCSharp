@@ -10,9 +10,32 @@ namespace KLay.Core.KGraph.Entities
 {
     public class KPort
     {
-        public IKNode Node { get; set; }
+        List<KLabel> _labelList = new List<KLabel>();
+        List<KEdge> _edgeList = new List<KEdge>();
+        IKNode _node;
+
+
+        public IKNode Node { get { return _node; }
+            set {
+
+                if(_node != null)
+                {
+                    _node.PortList.Remove(this);
+                }
+                _node = value;
+                
+                if(_node != null)
+                {
+                    _node.PortList.Add(this);
+                }
+
+            } }
 
         public IKShapeLayout KShapeLayout { get; set; }
+
+        public List<KLabel> LabelList { get { return _labelList; } }
+
+        public List<KEdge> EdgeList { get { return _edgeList; } }
 
     }
 }

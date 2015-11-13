@@ -6,6 +6,10 @@ namespace KLay.Util.Interfaces
     public interface IKimlUtil
     {
         IKNode CreateInitializedKNode();
-        KLabel CreateInitializedKLabel(IKNode parent)
+        KLabel CreateInitializedKLabel(IKNode parent);
+
+        KPort CreateInitializedPort();
+
+        KEdge CreateInitializedEdge();
     }
 }
