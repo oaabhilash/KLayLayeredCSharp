@@ -1,6 +1,7 @@
 ﻿using KLay.Core.KGraph;
 using KLay.Core.KGraph.Entities;
 using KLay.Core.KGraph.Interfaces;
+using KLay.Kiml.Enums;
 using KLay.Util;
 using KLay.Util.Interfaces;
 using System;
@@ -8,6 +9,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+/// <summary>
+/// http://rtsys.informatik.uni-kiel.de/confluence/display/KIELER/The+Five+Phases
+/// </summary>
+
 
 namespace KLayLayeredCSharp
 {
@@ -58,6 +63,28 @@ namespace KLayLayeredCSharp
             port2.EdgeList.Add(edge1);
 
             return parentNode;
+
+        }
+
+        public static void AddLayoutOptions(IKNode parentNode)
+        {
+            parentNode.KShapeLayout.LayoutDirection = LayoutDirectionEnum.RIGHT;
+
+            foreach(IKNode childNode in parentNode.Children)
+            {
+                childNode.KShapeLayout.Width = 30.0f;
+                childNode.KShapeLayout.Height = 30.0f;
+                childNode.KShapeLayout.PortConstraint = PortConstraintsEnum.FIXED_POS;
+
+                int i = 0;
+
+                foreach(KPort port in childNode.PortList)
+                {
+                    // NEED TO put the port allocation code here.
+                    // test code is assigning it in non-standard way.
+                    // need to see what is the best way to automate this.
+                }
+            }
 
         }
     }

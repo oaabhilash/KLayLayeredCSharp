@@ -1,4 +1,5 @@
-﻿using KLay.Kiml.Interfaces;
+﻿using KLay.Kiml.Enums;
+using KLay.Kiml.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,7 +77,10 @@ namespace KLay.Kiml
             _modified = false;
         }
 
+        public LayoutDirectionEnum LayoutDirection { get; set; }
 
+        public PortConstraintsEnum PortConstraint { get; set; } 
 
+        public PortSideEnum PortSide { get; set; }
     }
 }

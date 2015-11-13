@@ -1,4 +1,6 @@
-﻿namespace KLay.Kiml.Interfaces
+﻿using KLay.Kiml.Enums;
+
+namespace KLay.Kiml.Interfaces
 {
     public interface IKShapeLayout
     {
@@ -10,5 +12,11 @@
 
         bool IsModified();
         void ResetModificationFlag();
+
+        LayoutDirectionEnum LayoutDirection { get; set; }
+
+        PortConstraintsEnum PortConstraint { get; set; }
+
+        PortSideEnum PortSide { get; set; }
     }
 }

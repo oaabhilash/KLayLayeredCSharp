@@ -42,6 +42,9 @@
   <ItemGroup>
     <Compile Include="Entities\KInsets.cs" />
     <Compile Include="Entities\KPoint.cs" />
+    <Compile Include="Enums\LayoutDirectionEnum.cs" />
+    <Compile Include="Enums\PortConstraintsEnum.cs" />
+    <Compile Include="Enums\PortSideEnum.cs" />
     <Compile Include="Interfaces\IKEdgeLayout.cs" />
     <Compile Include="Interfaces\IKShapeLayout.cs" />
     <Compile Include="KEdgeLayout.cs" />

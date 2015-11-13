@@ -14,7 +14,7 @@ namespace KLay.Core.KGraph.Entities
         List<KEdge> _edgeList = new List<KEdge>();
         IKNode _node;
 
-
+        //TODO :: Add unit test
         public IKNode Node { get { return _node; }
             set {
 
