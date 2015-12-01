@@ -1,5 +1,5 @@
 ﻿using KLay.Core.KGraph.Entities;
-using KLay.Kiml.Interfaces;
+using KLay.Kiml;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace KLay.Core.KGraph.Interfaces
 {
     public interface IKNode
     {
-        IKShapeLayout KShapeLayout { get; set; }
+        KShapeLayout KShapeLayout { get; set; }
         IKNode Parent { get; set; }
         List<KLabel> LabelList { get; }
 

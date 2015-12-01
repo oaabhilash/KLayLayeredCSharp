@@ -76,7 +76,7 @@ namespace KLayLayeredCSharp
                 childNode.KShapeLayout.Height = 30.0f;
                 childNode.KShapeLayout.PortConstraint = PortConstraintsEnum.FIXED_POS;
 
-                int i = 0;
+                //int i = 0;
 
                 foreach(KPort port in childNode.PortList)
                 {

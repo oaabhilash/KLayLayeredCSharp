@@ -1,6 +1,6 @@
 ﻿using KLay.Core.KGraph.Entities;
 using KLay.Core.KGraph.Interfaces;
-using KLay.Kiml.Interfaces;
+using KLay.Kiml;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +17,7 @@ namespace KLay.Core.KGraph
         List<KPort> _portList = new List<KPort>(); 
 
 
-        public IKShapeLayout KShapeLayout { get; set; }
+        public KShapeLayout KShapeLayout { get; set; }
 
         public IKNode Parent {
             set

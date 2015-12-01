@@ -1,5 +1,5 @@
 ﻿using KLay.Core.KGraph.Interfaces;
-using KLay.Kiml.Interfaces;
+using KLay.Kiml;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +31,7 @@ namespace KLay.Core.KGraph.Entities
 
             } }
 
-        public IKShapeLayout KShapeLayout { get; set; }
+        public KShapeLayout KShapeLayout { get; set; }
 
         public List<KLabel> LabelList { get { return _labelList; } }
 

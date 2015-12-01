@@ -1,5 +1,5 @@
 ﻿using KLay.Core.KGraph.Interfaces;
-using KLay.Kiml.Interfaces;
+using KLay.Kiml;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +22,6 @@ namespace KLay.Core.KGraph.Entities
 
         public List<KLabel> LabelList { get { return _labelList; } }
 
-        public IKEdgeLayout EdgeLayout { get; set; }
+        public KEdgeLayout EdgeLayout { get; set; }
     }
 }
